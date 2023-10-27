@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Alapok 2. - 2. feladat</title>
+    <script>
+        function chosen() {
+            let textColor1 = document.getElementsByClassName('input');
+            textColor1.style.color = "green";
+        }
+
+        function left() {
+            let textColor2 = document.getElementsByClassName('input');
+            textColor2.style.color = "black";
+        }
+    </script>
 </head>
 
 <body>
-    <input id="firstInput" type="text">
-    <input id="secondInput" type="text">
-    <input id="thirdInput" type="text">
+    <input class="input" onfocus="chosen();" onblur="left();" type="text">
+    <input class="input" onfocus="chosen();" onblur="left();" type="text">
+    <input class="input" onfocus="chosen();" onblur="left();" type="text">
 </body>
 
 </html>
