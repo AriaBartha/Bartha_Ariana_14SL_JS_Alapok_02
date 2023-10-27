@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Alapok 2. - 4. feladat</title>
+    <script>
+        function bevitt() {
+            const bevittSzoveg = document.getElementById("bevitel");
+            const szoveg = bevittSzoveg.value;
+            document.getElementById("bekezdes").innerHTML.value = szoveg;
+
+        }
+    </script>
 </head>
 
 <body>
     <p id="bekezdes">Ez egy bekezdés, ami változni fog</p>
-    <input id="bevitel" onforminput="bevitt()" type="text">
+    <input id="bevitel" oninput="bevitt();" type="text">
 </body>
 
 </html>
