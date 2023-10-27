@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Alapok 2. - 2. feladat</title>
     <script>
-        function chosen() {
-            let textColor1 = document.getElementsByClassName('input');
-            textColor1.style.color = "green";
+        function chosen(x) {
+            x.style.color = "green";
+
         }
 
-        function left() {
-            let textColor2 = document.getElementsByClassName('input');
-            textColor2.style.color = "black";
+        function left(x) {
+            x.style.color = "black";
         }
     </script>
 </head>
 
 <body>
-    <input class="input" onfocus="chosen();" onblur="left();" type="text">
-    <input class="input" onfocus="chosen();" onblur="left();" type="text">
-    <input class="input" onfocus="chosen();" onblur="left();" type="text">
+    <input onfocus="chosen(this)" onblur="left(this)" type="text">
+    <input onfocus="chosen(this)" onblur="left(this)" type="text">
+    <input onfocus="chosen(this)" onblur="left(this)" type="text">
 </body>
 
 </html>
