@@ -10,11 +10,14 @@
             const gombFelirat = document.getElementById('gomb').innerHTML = "Sikerült";
 
         }
+        function feliratVissza() {
+            const gombFelirat = document.getElementById('gomb').innerHTML = "Húzd ide az egeret";
+        }
     </script>
 </head>
 
 <body>
-    <button id="gomb" onmouseenter="feliratValtozik();" onmouseleave="feliratVissz();">Húzd ide az egeret</button>
+    <button id="gomb" onmouseenter="feliratValtozik();" onmouseleave="feliratVissza();">Húzd ide az egeret</button>
 </body>
 
 </html>
